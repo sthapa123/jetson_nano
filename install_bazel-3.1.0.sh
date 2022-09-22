@@ -8,8 +8,8 @@ folder=${HOME}/src
 mkdir -p $folder
 
 echo "** Install requirements"
-sudo apt-get install -y pkg-config zip g++ zlib1g-dev unzip
-sudo apt-get install -y openjdk-8-jdk
+#sudo apt-get install -y pkg-config zip g++ zlib1g-dev unzip
+#sudo apt-get install -y openjdk-8-jdk
 
 echo "** Download bazel-3.1.0 sources"
 pushd $folder
