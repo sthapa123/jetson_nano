@@ -16,7 +16,6 @@ sudo dnf update
 sudo dnf clean all
 sudo dnf group install "Development Tools"
 sudo ln -s /usr/bin/python3.6 /usr/bin/python
-sudo dnf install java-1.8.0-openjdk
 
 echo "** Download bazel-3.1.0 sources"
 pushd $folder
