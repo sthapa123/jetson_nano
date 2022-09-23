@@ -8,8 +8,14 @@ folder=${HOME}/src
 mkdir -p $folder
 
 echo "** Install requirements"
-#sudo apt-get install -y pkg-config zip g++ zlib1g-dev unzip
-#sudo apt-get install -y openjdk-8-jdk
+## Building on AlmaLinux 8.6
+sudo dnf install java-1.8.0-openjdk
+sudo dnf install java-1.8.0-openjdk-devel
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
+sudo dnf update
+sudo dnf clean all
+sudo dnf group install "Development Tools"
+sudo ln -s /usr/bin/python3.6 /usr/bin/python
 sudo dnf install java-1.8.0-openjdk
 
 echo "** Download bazel-3.1.0 sources"
